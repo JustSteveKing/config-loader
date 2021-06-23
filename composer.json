@@ -12,10 +12,14 @@
         }
     ],
     "autoload": {
-        "psr-4": {}
+        "psr-4": {
+            "JustSteveKing\\ConfigLoader\\": "src/"
+        }
     },
     "autoload-dev": {
-        "psr-4": {}
+        "psr-4": {
+            "JustSteveKing\\ConfigLoader\\Tests\\": "tests/"
+        }
     },
     "require-dev": {
         "vimeo/psalm": "^4.8"
