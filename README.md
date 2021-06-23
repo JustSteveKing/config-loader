@@ -26,7 +26,7 @@ A PHP package that will allow you to get all config files from a directory, or s
 You can install this package using composer:
 
 ```bash
-composer require juststeveking/config/loader
+composer require juststeveking/config-loader
 ```
 
 ## Usage
