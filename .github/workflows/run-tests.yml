@@ -10,10 +10,11 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        os: [ubuntu-latest, ubuntu-stable, windows-latest, windows-stable]
+        os: [ ubuntu-latest, windows-latest ]
         php: [ 8.0 ]
+        stability: [ prefer-lowest, prefer-stable ]
 
-    name: Running test on PHP v-${{ matrix.php }} using OS ${{ matrix.os }}
+    name: PHP v-${{ matrix.php }} - ${{ matrix.stability }} - ${{ matrix.os }}
 
     steps:
       - name: Checkout Code
