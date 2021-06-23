@@ -21,6 +21,9 @@
             "JustSteveKing\\ConfigLoader\\Tests\\": "tests/"
         }
     },
+    "require": {
+        "php": "^8.0"
+    },
     "require-dev": {
         "juststeveking/config": "^2.0",
         "pestphp/pest": "^1.8",
