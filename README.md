@@ -126,6 +126,34 @@ $loader->load(
 );
 ```
 
+## Going further
+
+If you want to build something that is a little more than just a loader, and allows you to use dot notation follow these steps:
+
+- Install [juststeveking/config](https://packagist.org/packages/juststeveking/config)
+- Create a Config Repository and load in your config:
+
+```php
+use JustSteveKing\ConfigLoader\Loader;
+use JustSteveKing\Config\Repository;
+
+$loader = new Loader(
+    basePath: __DIR__ . '/../config',
+);
+
+$loader->loadAll();
+
+$config = Repository::build(
+    items: $loader->config(),
+);
+
+// Access config:
+$appName = $config->get(
+    key: 'app.name',
+    value: 'fall-back-value',
+);
+```
+
 ## Security
 
 If you discover any security related issues, please email juststevemcd@gmail.com instead of using the issue tracker.

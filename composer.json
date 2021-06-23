@@ -22,6 +22,7 @@
         }
     },
     "require-dev": {
+        "juststeveking/config": "^2.0",
         "pestphp/pest": "^1.8",
         "spatie/ray": "^1.26",
         "vimeo/psalm": "^4.8"
