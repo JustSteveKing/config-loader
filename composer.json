@@ -1,0 +1,32 @@
+{
+    "name": "juststeveking/config-loader",
+    "description": "A simple to use configuration loader for PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "role": "Author",
+            "name": "Steve McDougall",
+            "email": "juststevemcd@gmail.com",
+            "homepage": "https://www.juststeveking.uk/"
+        }
+    ],
+    "autoload": {
+        "psr-4": {}
+    },
+    "autoload-dev": {
+        "psr-4": {}
+    },
+    "require-dev": {
+        "vimeo/psalm": "^4.8"
+    },
+    "scripts": {},
+    "scripts-descriptions": {},
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "preferred-install": "dist"
+    }
+}
