@@ -22,10 +22,20 @@
         }
     },
     "require-dev": {
+        "pestphp/pest": "^1.8",
+        "spatie/ray": "^1.26",
         "vimeo/psalm": "^4.8"
     },
-    "scripts": {},
-    "scripts-descriptions": {},
+    "scripts": {
+        "analyze": "./vendor/bin/psalm --show-info=true",
+        "test": "./vendor/bin/pest",
+        "test-coverage": "./vendor/bin/pest --coverage"
+    },
+    "scripts-descriptions": {
+        "analyze": "Run static analysis checks on codebase.",
+        "test": "Run pestPHP test suite on codebase.",
+        "test-coverage": "Run pestPHP test suite with coverage flag on codebase."
+    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
