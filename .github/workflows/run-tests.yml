@@ -32,4 +32,4 @@ jobs:
         run: composer install --no-interaction --prefer-dist
 
       - name: Execute tests
-        run: composer run test-coverage
+        run: composer run test
